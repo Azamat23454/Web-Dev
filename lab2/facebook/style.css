@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    flex: 1;
+}
+.left {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+.left h1 {
+    color: #1877f2;
+    font-size: 48px;
+    margin: 0;
+}
+.left p {
+    font-size: 24px;
+    color: #1c1e21;
+}
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-box button:hover {
+    background-color: #165cdb;
+}
+.login-box a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+.login-box .create-account {
+    background-color: #42b72a;
+    margin-top: 10px;
+}
+.footer {
+    text-align: left;
+    font-size: 12px;
+    color: #737373;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+.footer-content {
+    width: 60%;
+    margin: 0 auto;
+}
+.footer a {
+    color: #737373;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+    .left h1 {
+        font-size: 36px;
+    }
+    .left p {
+        font-size: 18px;
+    }
+    .footer-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
