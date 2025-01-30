@@ -1,0 +1,336 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    padding: 10px 0;
+    text-align: left;
+    margin-left: 75px;
+    color: black;
+}
+.header img {
+    vertical-align: middle;
+}
+.header a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.header .right {
+    float: right;
+    margin-right: 20px;
+}
+.main-banner {
+    background-color: #f2f2f2;
+    padding: 150px 0;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+.main-banner img {
+    width: calc(100% - 150px);
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.main-banner .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    margin-left: 250px;
+}
+.main-banner .content h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+.main-banner .content p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+.main-banner .content a {
+    background-color: #0078d4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin-left: 47px;
+    margin-right: 47px;
+}
+.product {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 22%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+.product h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.product p {
+    font-size: 16px;
+    padding: 0 10px;
+}
+.product a {
+    display: block;
+    background-color: #0078d4;
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+}
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        width: 90%;
+    }
+}
+.outlook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #e5e5e5;
+    padding: 0 20px;
+  }
+  
+  .outlook-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    background-image: url('Outlook.webp');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .outlook-text-section {
+    position: relative;
+    max-width: 50%;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .outlook-text-section h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .outlook-text-section p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .outlook-text-section button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .outlook-content {
+      height: 300px;
+      padding: 0 10px;
+    }
+    .outlook-text-section {
+      max-width: 100%;
+    }
+    .outlook-text-section h1 {
+      font-size: 20px;
+    }
+    .outlook-text-section p {
+      font-size: 14px;
+    }
+    .outlook-text-section button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  .business {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.business h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.business .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+.business .card img {
+    width: 100%;
+    height: auto;
+}
+.business .card-content {
+    padding: 20px;
+}
+.business .card-content h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+.business .card-content p {
+    font-size: 1em;
+    margin: 0 0 20px;
+    color: #666;
+}
+.business .card-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+.business .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.business .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #666;
+}
+.business .footer a {
+    color: #0078d4;
+    text-decoration: none;
+}
+.business .footer .icons {
+    margin-top: 10px;
+}
+.business .footer .icons i {
+    margin: 0 5px;
+    font-size: 1.5em;
+    color: #666;
+}
+@media (max-width: 768px) {
+    .business .cards {
+        flex-direction: column;
+    }
+}
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    border-top: 1px solid #e1e1e1;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px 20px;
+}
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #e1e1e1;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 5px;
+}
+.footer-bottom .language-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.footer-bottom .language-selector img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.footer-bottom .language-selector span {
+    margin-right: 10px;
+}
+.footer-bottom .privacy-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.footer-bottom .privacy-options input {
+    margin-left: 5px;
+}
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        flex: 1 1 45%;
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
