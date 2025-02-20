@@ -1,0 +1,12 @@
+<div class="product-card">
+    <img [src]="product.image" alt="{{ product.name }}">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>⭐️ Рейтинг: {{ product.rating | number:'1.1-1' }}/5</p>
+    <a [href]="product.link" target="_blank">Перейти на Каспи</a>
+
+    <button (click)="likeProduct()">👍 Like ({{ likes }})</button>
+    <button (click)="openWhatsApp()">🟢 WhatsApp</button>
+    <button (click)="share(product.link)">🔵 Telegram</button>
+    <button (click)="deleteProduct()">🚽 Удалить</button>
+</div>
